@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-white shadow-md">
       {/* Top bar */}
-      <div className="bg-secondary text-white py-2 px-4 md:px-6">
+      <div className="bg-secondary-500 text-white py-2 px-4 md:px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm flex-col md:flex-row gap-2">
           <div className="flex gap-6 items-center">
             <a href={`tel:${COMPANY_INFO.phone}`} className="flex items-center gap-2 hover:text-primary-500">
@@ -35,7 +35,7 @@ export const Header = () => {
               HAFA
             </div>
             <div>
-              <h1 className="text-xl font-bold text-secondary">HAFA INFRA</h1>
+              <h1 className="text-xl font-bold text-secondary-500">HAFA INFRA</h1>
               <p className="text-xs text-primary-500">Construction Materials</p>
             </div>
           </Link>
@@ -46,7 +46,7 @@ export const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-secondary hover:text-primary-500 font-medium transition-colors"
+                className="text-secondary-500 hover:text-primary-500 font-medium transition-colors"
               >
                 {item.label}
               </Link>
@@ -82,13 +82,13 @@ export const Header = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-gray-50 mt-4 rounded-lg p-4 space-y-3">
+          <div className="md:hidden bg-accent mt-4 rounded-lg p-4 space-y-3">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-secondary hover:text-primary-500 font-medium transition-colors py-2"
+                className="block text-secondary-500 hover:text-primary-500 font-medium transition-colors py-2"
               >
                 {item.label}
               </Link>

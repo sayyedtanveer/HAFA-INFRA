@@ -14,8 +14,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #2a2415;
-  background-color: #ffffff;
+  color: #0a1623;
+  background-color: #f8f6f1;
   line-height: 1.6;
 }
 
@@ -23,6 +23,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
+  color: #0a1623;
 }
 
 h1 {
@@ -31,10 +32,16 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  color: #1a365d;
 }
 
 h3 {
   font-size: 1.5rem;
+  color: #1a365d;
+}
+
+p {
+  color: #2d3a4f;
 }
 
 /* Buttons */
@@ -43,15 +50,32 @@ button {
   transition: all 0.3s ease;
 }
 
+/* Custom section styles */
+.bg-gray-50 {
+  background-color: #f8f6f1 !important;
+}
+
+.text-secondary {
+  color: #0a1623 !important;
+}
+
+.text-gray-600 {
+  color: #4a5f7f !important;
+}
+
+.text-gray-700 {
+  color: #2d3a4f !important;
+}
+
 /* Links */
 a {
-  color: #c39a69;
+  color: #d4af37;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #9c7d54;
+  color: #b8932d;
 }
 
 /* Print Styles */

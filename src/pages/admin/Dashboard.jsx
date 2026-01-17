@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
-import { Button } from '../components/ui/Button'
-import { Card, CardContent } from '../components/ui/Card'
-import { usePO } from '../hooks/usePO'
-import { useChallan } from '../hooks/useChallan'
+import { Button } from '../../components/ui/Button'
+import { Card, CardContent } from '../../components/ui/Card'
+import { usePO } from '../../hooks/usePO'
+import { useChallan } from '../../hooks/useChallan'
 import { FileText, Truck, Plus } from 'lucide-react'
 
 export const AdminDashboard = () => {

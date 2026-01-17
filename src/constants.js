@@ -131,3 +131,50 @@ export const CHALLAN_STATUS = {
   DELIVERED: 'Delivered',
   CANCELLED: 'Cancelled'
 }
+
+// Utility Functions
+export function formatCurrency(amount) {
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR'
+  }).format(amount)
+}
+
+export function numberToWords(num) {
+  const ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+  const tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety']
+  const scales = ['', 'Thousand', 'Lakh', 'Crore']
+
+  if (num === 0) return 'Zero'
+
+  let result = ''
+  let scaleIndex = 0
+
+  while (num > 0) {
+    let part = num % (scaleIndex === 0 ? 100 : 100)
+    num = Math.floor(num / (scaleIndex === 0 ? 100 : 100))
+
+    if (part !== 0) {
+      let partWords = ''
+      if (scaleIndex === 0) {
+        const tensDigit = Math.floor(part / 10)
+        const onesDigit = part % 10
+        if (tensDigit > 1) {
+          partWords = tens[tensDigit]
+          if (onesDigit > 0) partWords += ' ' + ones[onesDigit]
+        } else if (tensDigit === 1) {
+          partWords = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'][onesDigit]
+        } else {
+          partWords = ones[onesDigit]
+        }
+      }
+      if (scaleIndex > 0) {
+        partWords += ' ' + scales[scaleIndex]
+      }
+      result = partWords + ' ' + result
+    }
+    scaleIndex++
+  }
+
+  return result.trim()
+}

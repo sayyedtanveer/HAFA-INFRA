@@ -5,7 +5,7 @@ import { Phone, MessageSquare, ChevronRight } from 'lucide-react'
 
 export const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-secondary via-gray-900 to-secondary text-white py-20 px-4 md:px-6">
+    <section className="bg-gradient-to-br from-secondary-500 via-secondary-600 to-secondary-700 text-white py-20 px-4 md:px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
@@ -14,16 +14,16 @@ export const HeroSection = () => {
               Premium Construction Materials
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
             Quality Materials for Your Construction Dreams
           </h1>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-100 mb-8 leading-relaxed font-medium">
             HAFA INFRA supplies premium steel, RMC, sand, and blocks for all your construction needs in Mumbai. Trusted by builders, contractors, and homeowners.
           </p>
           
           <div className="flex flex-col md:flex-row gap-4 mb-8">
             <a href={`tel:${COMPANY_INFO.phone}`} className="inline-block">
-              <Button size="lg" className="w-full md:w-auto flex items-center justify-center gap-2">
+              <Button size="lg" className="w-full md:w-auto flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white">
                 <Phone className="w-5 h-5" />
                 Call Now
               </Button>
@@ -34,14 +34,14 @@ export const HeroSection = () => {
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <Button variant="outline" size="lg" className="w-full md:w-auto flex items-center justify-center gap-2 border-white text-white hover:bg-white hover:text-secondary">
+              <Button variant="outline" size="lg" className="w-full md:w-auto flex items-center justify-center gap-2 border-2 border-primary-500 text-primary-500 bg-white hover:bg-primary-500 hover:text-white font-semibold">
                 <MessageSquare className="w-5 h-5" />
                 WhatsApp Us
               </Button>
             </a>
           </div>
 
-          <p className="text-gray-400">📞 {COMPANY_INFO.phone} | 📧 {COMPANY_INFO.email}</p>
+          <p className="text-gray-200 font-medium">📞 {COMPANY_INFO.phone} | 📧 {COMPANY_INFO.email}</p>
         </div>
 
         {/* Right Visual */}

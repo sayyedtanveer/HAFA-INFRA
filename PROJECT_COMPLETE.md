@@ -13,7 +13,7 @@ A **production-ready, fully responsive React + Vite website** for HAFA INFRA - C
 ### ✅ Project Infrastructure
 - **Build Tool**: Vite configuration with React plugin
 - **Package Management**: Complete package.json with all dependencies
-- **Styling**: Tailwind CSS with custom color scheme (Black, Gold, White)
+- **Styling**: Tailwind CSS with custom color scheme (Gold, Deep Navy, Cream)
 - **TypeScript Config**: Proper tsconfig for JavaScript/JSX support
 - **PostCSS**: Configured for Tailwind CSS compilation
 - **ESLint**: Code quality configuration
@@ -164,9 +164,9 @@ A **production-ready, fully responsive React + Vite website** for HAFA INFRA - C
 ## 🎨 Design Features
 
 ### Theme
-- **Primary Color** (Gold): `#c39a69`
-- **Secondary Color** (Black): `#000000`
-- **Accent Color** (White): `#ffffff`
+- **Primary Color** (Gold): `#d4af37`
+- **Secondary Color** (Deep Navy): `#1a365d`
+- **Accent Color** (Cream): `#f8f6f1`
 
 ### Typography
 - Clean, modern font (Inter)
@@ -430,7 +430,7 @@ HAFA-INFRA/
 - ✅ react-to-print
 - ✅ jsPDF + html2canvas
 - ✅ Fully responsive
-- ✅ Professional UI (Black, Gold, White)
+- ✅ Professional UI (Gold, Deep Navy, Cream)
 - ✅ Clean architecture
 - ✅ Printable documents
 - ✅ PDF export
